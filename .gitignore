@@ -1,0 +1,4 @@
+snix/
+nixpkgs/
+.devenv/
+.devenv.flake.nix
