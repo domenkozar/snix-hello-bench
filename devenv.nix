@@ -5,7 +5,6 @@
     pkgs.cargo
     pkgs.rustc
     pkgs.flamegraph
-    pkgs.nodePackages.svgo
     pkgs.nix
     pkgs.time
     pkgs.hyperfine
@@ -78,9 +77,6 @@
     CARGO_PROFILE_RELEASE_DEBUG=true cargo flamegraph --bin snix --release -- --no-warnings -E '(import <nixpkgs> {}).hello.outPath'
     mv flamegraph.svg ../../snix-flamegraph.svg
     cd ../..
-
-    echo "optimizing svg"
-    svgo snix-flamegraph.svg
     
     echo
     echo "Results saved to:"
