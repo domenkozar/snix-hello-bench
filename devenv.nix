@@ -2,9 +2,8 @@
 
 {
   packages = [ 
-    pkgs.cargo
-    pkgs.rustc
     pkgs.flamegraph
+    pkgs.cargo-flamegraph
     pkgs.nix
     pkgs.time
     pkgs.hyperfine
