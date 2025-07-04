@@ -30,6 +30,11 @@ jobs:
     - name: Install devenv.sh
       run: nix profile install nixpkgs#devenv
     
+    - name: Configure perf for benchmarking
+      run: |
+        echo 'kernel.perf_event_paranoid=1' | sudo tee -a /etc/sysctl.conf
+        sudo sysctl -p
+    
     - name: Run benchmark
       run: |
         devenv shell benchmark
