@@ -1,4 +1,4 @@
-| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
+| Command | Mean [s] | Min [s] | Max [s] | Relative |
 |:---|---:|---:|---:|---:|
-| `snix` | 962.7 ± 21.8 | 933.5 | 998.8 | 3.42 ± 0.11 |
-| `nix-instantiate` | 281.7 ± 6.9 | 275.3 | 293.8 | 1.00 |
+| `snix` | 1.027 ± 0.006 | 1.019 | 1.037 | 2.18 ± 0.04 |
+| `nix-instantiate` | 0.470 ± 0.008 | 0.459 | 0.481 | 1.00 |
