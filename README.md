@@ -12,8 +12,8 @@ Evaluating the derivation path for the `hello` package from nixpkgs:
 
 | Command | Mean [s] | Min [s] | Max [s] | Relative |
 |:---|---:|---:|---:|---:|
-| `snix` | 1.099 ± 0.013 | 1.081 | 1.121 | 2.32 ± 0.06 |
-| `nix-instantiate` | 0.474 ± 0.010 | 0.460 | 0.491 | 1.00 |
+| `snix` | 1.026 ± 0.008 | 1.013 | 1.038 | 2.52 ± 0.07 |
+| `nix-instantiate` | 0.407 ± 0.011 | 0.397 | 0.427 | 1.00 |
 
 ## Performance Analysis
 
